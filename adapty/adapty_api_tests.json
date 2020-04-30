@@ -1,0 +1,538 @@
+{
+	"info": {
+		"_postman_id": "88d34e60-31e4-45ad-a237-b9bade371c47",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "positive_case",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email blank field",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid email address",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "short password",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "repeated registration",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "no confirm_password field",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "no password field",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "additive of company",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "https://dev.adapty.io/registration",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://dev.adapty.io",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"qwe_test658@qwe.qwe\", \n\t\"password1\": \"qwe123\",\n\t\"password2\": \"qwe123\"\n}\n"
+				},
+				"url": {
+					"raw": "https://api-dev.adapty.io/api/v1/client/auth/registration/",
+					"protocol": "https",
+					"host": [
+						"api-dev",
+						"adapty",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"auth",
+						"registration",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,2 +1,1 @@
-# new_repository
-# first_commit
+Автотесты на стеке python3 + pytest + selenium
